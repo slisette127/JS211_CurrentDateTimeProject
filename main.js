@@ -44,9 +44,28 @@ console.log('NEW', string2Num('42'))
   // * NaN
   // * String
 
+
+
   //write a function that takes a variable that is a datatype
   //return the type of that variable - using the 'typeof' operator
-  
+  const variableOne = 0
+  const variableTwo = "Peter"
+  const variableThree = {id: 350, name: "Peter"}
+
+  typeof variableOne // => of type Number
+  typeof variableTwo // => of type String
+  typeof variableThree // => of type Object
+
+  console.log('typeof "I love JS!"', typeof "I love JS!");
+  console.log('typeof 1.08', typeof 1.08);
+  console.log('typeof NaN', typeof NaN);
+  console.log('typeof false', typeof false);
+  console.log('typeof [1, 2, 3, 4]', typeof [1, 2, 3, 4]);
+  console.log('typeof {name:'Victoria', age:26}');
+  console.log('typeof new Date()', typeof new Date());
+  console.log('typeof function () {}', typeof function () {});
+  console.log('typeof myCar', typeof myCar);
+  console.log('typeof null', typeof null);
 
   
 // Write a JavaScript program that adds 2 numbers together.
@@ -54,6 +73,8 @@ const add = (num1, num2) => {
   return num1 + num2;
 }
 console.log(add(42, 2));
+
+
 
 // Write a JavaScript program that runs only when 2 things are true.
 
