@@ -48,25 +48,33 @@ console.log('NEW', string2Num('42'))
 
   //write a function that takes a variable that is a datatype
   //return the type of that variable - using the 'typeof' operator
-  const variableOne = 0
-  const variableTwo = "Peter"
-  const variableThree = {id: 350, name: "Peter"}
+let oneNum = 10;
+let twoNum = 5;
+console.log(oneNum + twoNum)
 
-  typeof variableOne // => of type Number
-  typeof variableTwo // => of type String
-  typeof variableThree // => of type Object
+const myBool = false;
+const myNumber = 27;
+const myString = 'string';
 
-  console.log('typeof "I love JS!"', typeof "I love JS!");
-  console.log('typeof 1.08', typeof 1.08);
-  console.log('typeof NaN', typeof NaN);
-  console.log('typeof false', typeof false);
-  console.log('typeof [1, 2, 3, 4]', typeof [1, 2, 3, 4]);
-  console.log('typeof {name:'Victoria', age:26}');
-  console.log('typeof new Date()', typeof new Date());
-  console.log('typeof function () {}', typeof function () {});
-  console.log('typeof myCar', typeof myCar);
-  console.log('typeof null', typeof null);
 
+const isTypeOf = (data) => {
+return console.log(typeof data);
+}
+
+isTypeOf(myBool);
+isTypeOf(myNumber);
+isTypeOf(myString);
+isTypeOf(27);
+isTypeOf(x);
+isTypeOf(0);
+isTypeOf(null);
+
+
+
+
+
+
+  
   
 // Write a JavaScript program that adds 2 numbers together.
 const add = (num1, num2) => {
@@ -77,14 +85,43 @@ console.log(add(42, 2));
 
 
 // Write a JavaScript program that runs only when 2 things are true.
+const season = (x , y) => {
+  if (x === y) {
+    return "hello"
+  }
+  else{ return "bye"}
+}
+
+console.log(season(3, 3));
+
+console.log(season(3, 4));
 
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
+const hour = (x, y) => {
+
+if (x === 18) {
+  greeting = "Good day";
+} else {greeting = "Good evening";}
+}
+
+console.log(hour(18, 2));
 
 
 
 // Write a JavaScript program that runs when both things are not true.  
+const time = (x, y) => {
+  
+
+if (x && y > 10) {
+  return "Good morning";
+} 
+
+}
+
+console.log(time(11, 20));
+
 
 // ***************************
 //         PART TWO
